@@ -7,7 +7,7 @@ use Psr\Http\Message\UriInterface;
 
 interface Builder extends UriInterface, Arrayable
 {
-    const PHP_URL_ALL = -1;
+    public const PHP_URL_ALL = -1;
 
     /**
      * Parse a URL.
