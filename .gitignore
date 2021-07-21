@@ -1,0 +1,7 @@
+.idea/
+vendor/
+
+*.cache
+*.clover
+*.orig
+*.lock
