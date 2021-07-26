@@ -17,7 +17,7 @@ interface Driver
 
     public function response(array $data, bool $mapping = true): Response;
 
-    public function model(Model $model, string $request): self;
+    public function model(Model $model): self;
 
     public function statuses(): Status;
 
