@@ -5,7 +5,7 @@ namespace Helldar\Contracts\Cashier\Resources;
 use Helldar\Contracts\Cashier\Authentication\Client;
 use Illuminate\Database\Eloquent\Model;
 
-interface Payment
+interface Request
 {
     public function __construct(Model $model);
 
