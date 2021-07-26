@@ -4,8 +4,8 @@ namespace Helldar\Contracts\Cashier;
 
 use Helldar\Contracts\Cashier\DTO\Config;
 use Helldar\Contracts\Cashier\Exceptions\Exception;
-use Helldar\Contracts\Cashier\Http\Response;
-use Helldar\Contracts\Cashier\Resources\Status;
+use Helldar\Contracts\Cashier\Helpers\Status;
+use Helldar\Contracts\Cashier\Resources\Response;
 use Illuminate\Database\Eloquent\Model;
 
 /**

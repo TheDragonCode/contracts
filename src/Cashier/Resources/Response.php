@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Contracts\Cashier\Http;
+namespace Helldar\Contracts\Cashier\Resources;
 
 use Helldar\Contracts\Support\Arrayable;
 

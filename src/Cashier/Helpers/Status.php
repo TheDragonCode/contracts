@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Contracts\Cashier\Resources;
+namespace Helldar\Contracts\Cashier\Helpers;
 
 use Illuminate\Database\Eloquent\Model;
 

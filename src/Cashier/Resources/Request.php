@@ -3,11 +3,12 @@
 namespace Helldar\Contracts\Cashier\Resources;
 
 use Helldar\Contracts\Cashier\Authentication\Client;
+use Helldar\Contracts\Cashier\DTO\Config;
 use Illuminate\Database\Eloquent\Model;
 
 interface Request
 {
-    public function __construct(Model $model);
+    public function __construct(Model $model, Config $config);
 
     public function getAuthentication(): Client;
 
