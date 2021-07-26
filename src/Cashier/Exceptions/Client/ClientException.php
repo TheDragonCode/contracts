@@ -3,9 +3,9 @@
 namespace Helldar\Contracts\Cashier\Exceptions\Client;
 
 use Psr\Http\Message\UriInterface;
-use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
-interface ClientException extends ExceptionInterface
+interface ClientException extends HttpExceptionInterface
 {
     public function __construct(UriInterface $uri);
 }
