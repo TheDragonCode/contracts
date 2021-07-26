@@ -5,7 +5,7 @@ namespace Helldar\Contracts\Cashier\Authentication;
 use DateTimeInterface;
 use Helldar\Contracts\Support\Arrayable;
 
-interface Credentials extends Arrayable
+interface Tokenable extends Arrayable
 {
     public function __construct(array $items = []);
 
