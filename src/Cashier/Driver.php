@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 interface Driver
 {
-    public function __construct(array $config);
+    public function __construct(Config $config);
 
     public function response(array $data, bool $mapping = true): Response;
 
