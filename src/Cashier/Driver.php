@@ -2,22 +2,22 @@
 
 namespace Helldar\Contracts\Cashier;
 
-use Helldar\Contracts\Cashier\Authentication\Client;
+use Helldar\Contracts\Cashier\DTO\Config;
 use Helldar\Contracts\Cashier\Exceptions\Exception;
 use Helldar\Contracts\Cashier\Http\Response;
 use Helldar\Contracts\Cashier\Resources\Status;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @method static Driver make(Config $config)
+ */
 interface Driver
 {
-    /** @return \Helldar\Contracts\Cashier\Driver */
-    public static function make();
+    public function __construct(array $config);
 
     public function response(array $data, bool $mapping = true): Response;
 
     public function model(Model $model, string $request): self;
-
-    public function auth(Client $client): self;
 
     public function statuses(): Status;
 
