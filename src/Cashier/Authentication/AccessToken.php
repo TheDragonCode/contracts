@@ -2,9 +2,7 @@
 
 namespace Helldar\Contracts\Cashier\Authentication;
 
-use Helldar\Contracts\Support\Arrayable;
-
-interface AccessToken extends Arrayable
+interface AccessToken
 {
     public function getAccessToken(Client $client): Tokenable;
 }
