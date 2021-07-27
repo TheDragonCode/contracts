@@ -4,7 +4,7 @@ namespace Helldar\Contracts\Cashier\Helpers;
 
 use Illuminate\Database\Eloquent\Model;
 
-interface Status
+interface Statuses
 {
     public function model(Model $model): self;
 

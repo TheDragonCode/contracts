@@ -2,25 +2,18 @@
 
 namespace Helldar\Contracts\Cashier\Resources;
 
-use Helldar\Contracts\Cashier\Authentication\Client;
-use Helldar\Contracts\Cashier\DTO\Config;
-use Illuminate\Database\Eloquent\Model;
+use Helldar\Contracts\Http\Builder;
 
+/**
+ * @method static Request make(Model $model)
+ */
 interface Request
 {
-    public function __construct(Model $model, Config $config);
+    public function __construct(Model $model);
 
-    public function getAuthentication(): Client;
+    public function uri(): Builder;
 
-    public function getUniqueId(bool $every = false): string;
+    public function headers(): array;
 
-    public function getPaymentId(): string;
-
-    public function getSum(): int;
-
-    public function getCurrency(): string;
-
-    public function getCreatedAt(): string;
-
-    public function getNow(): string;
+    public function body(): array;
 }
