@@ -16,7 +16,7 @@ interface Jsonable
     /**
      * Convert JSON string to object.
      *
-     * @return \Helldar\Contracts\Support\Jsonable
+     * @return mixed
      */
-    public function fromJson(): self;
+    public function fromJson();
 }
