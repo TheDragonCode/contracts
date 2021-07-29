@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Helldar\Contracts\Cashier;
 
 use Helldar\Contracts\Cashier\Helpers\Statuses;
+use Helldar\Contracts\Cashier\Resources\Details;
 use Helldar\Contracts\Cashier\Resources\Response;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +15,8 @@ interface Driver
     public function __construct(Config\Driver $config, Model $payment);
 
     public function statuses(): Statuses;
+
+    public function modelDetails(): Details;
 
     public function start(): Response;
 
