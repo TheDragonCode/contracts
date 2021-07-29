@@ -16,7 +16,7 @@ interface Driver
 
     public function statuses(): Statuses;
 
-    public function modelDetails(): Details;
+    public function modelDetails(array $data): Details;
 
     public function start(): Response;
 
