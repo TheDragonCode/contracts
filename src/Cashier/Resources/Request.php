@@ -17,5 +17,9 @@ interface Request
 
     public function headers(): array;
 
+    public function getRawHeaders(): array;
+
     public function body(): array;
+
+    public function getRawBody(): array;
 }
