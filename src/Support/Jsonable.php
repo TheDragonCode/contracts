@@ -12,11 +12,4 @@ interface Jsonable
      * @return string
      */
     public function toJson(int $options = 0): string;
-
-    /**
-     * Convert JSON string to object.
-     *
-     * @return \Helldar\Contracts\Support\Jsonable
-     */
-    public function fromJson(): self;
 }
