@@ -9,5 +9,5 @@ use Throwable;
 
 interface ExceptionManager
 {
-    public function throw(Throwable $e, Builder $uri): void;
+    public static function throw(Throwable $e, Builder $uri): void;
 }
