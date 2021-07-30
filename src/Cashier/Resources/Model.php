@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Helldar\Contracts\Cashier\Resources;
 
+use Helldar\Contracts\Cashier\Http\Requests\Request;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
 /**
@@ -26,4 +27,6 @@ interface Model
     public function getCurrency(): string;
 
     public function getCreatedAt(): string;
+
+    public function getBankPaymentId(): string;
 }

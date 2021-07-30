@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Helldar\Contracts\Cashier;
 
 use Helldar\Contracts\Cashier\Helpers\Statuses;
+use Helldar\Contracts\Cashier\Http\Responses\Response;
 use Helldar\Contracts\Cashier\Resources\Details;
-use Helldar\Contracts\Cashier\Resources\Response;
 use Illuminate\Database\Eloquent\Model;
 
 /** @method static Driver make(Config\Driver $config, Model $payment) */

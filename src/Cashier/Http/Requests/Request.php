@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Resources;
+namespace Helldar\Contracts\Cashier\Http\Requests;
 
+use Helldar\Contracts\Cashier\Resources\Model;
 use Helldar\Contracts\Http\Builder;
 
 /**

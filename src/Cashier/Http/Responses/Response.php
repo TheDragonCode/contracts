@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Resources;
+namespace Helldar\Contracts\Cashier\Http\Responses;
 
 use Helldar\Contracts\DataTransferObject\DataTransferObject;
 use Helldar\Contracts\Support\Arrayable;
