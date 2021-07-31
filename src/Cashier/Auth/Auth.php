@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Helldar\Contracts\Cashier\Auth;
 
-use Helldar\Contracts\Cashier\Http\Requests\Request;
+use Helldar\Contracts\Cashier\Http\Request;
 use Helldar\Contracts\Cashier\Resources\Model;
 
 /** @method static Auth make(Model $model, Request $request, bool $hash = true) */

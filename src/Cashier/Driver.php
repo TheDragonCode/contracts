@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Helldar\Contracts\Cashier;
 
 use Helldar\Contracts\Cashier\Helpers\Statuses;
-use Helldar\Contracts\Cashier\Http\Responses\Response;
+use Helldar\Contracts\Cashier\Http\Response;
 use Helldar\Contracts\Cashier\Resources\Details;
 use Illuminate\Database\Eloquent\Model;
 

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Helldar\Contracts\Cashier\Resources;
 
-use Helldar\Contracts\Cashier\Http\Requests\Request;
+use Helldar\Contracts\Cashier\Http\Request;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
 /**
