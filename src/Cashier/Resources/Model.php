@@ -28,5 +28,5 @@ interface Model
 
     public function getCreatedAt(): string;
 
-    public function getBankPaymentId(): string;
+    public function getExternalId(): string;
 }
