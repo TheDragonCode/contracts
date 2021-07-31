@@ -11,4 +11,6 @@ interface Attributes extends DataTransferObject
     public function getType(): string;
 
     public function getStatus(): string;
+
+    public function getCreatedAt(): string;
 }
