@@ -14,5 +14,5 @@ interface Map extends DataTransferObject
 
     public function getNames(): array;
 
-    public function get(string $type): string;
+    public function get($type): string;
 }
