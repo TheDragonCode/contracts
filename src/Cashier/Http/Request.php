@@ -8,11 +8,11 @@ use Helldar\Contracts\Cashier\Resources\Model;
 use Helldar\Contracts\Http\Builder;
 
 /**
- * @method static Request make(Model $model, string $auth = null, bool $hash_token = true)
+ * @method static Request make(Model $model)
  */
 interface Request
 {
-    public function __construct(Model $model, string $auth = null, bool $hash_token = true);
+    public function __construct(Model $model);
 
     public function uri(): Builder;
 
