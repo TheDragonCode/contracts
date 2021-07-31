@@ -13,7 +13,7 @@ interface Driver extends DataTransferObject
     public function getDriver(): string;
 
     /** @return \Helldar\Contracts\Cashier\Resources\Model|string */
-    public function getResource(): string;
+    public function getDetails(): string;
 
     public function getClientId(): ?string;
 
