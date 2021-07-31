@@ -11,7 +11,7 @@ use Helldar\Contracts\Support\Jsonable;
 /** @method static Response make(array $items = []) */
 interface Response extends DataTransferObject, Arrayable, Jsonable
 {
-    public function getPaymentId(): ?string;
+    public function getExternalId(): ?string;
 
     public function getStatus(): ?string;
 }
