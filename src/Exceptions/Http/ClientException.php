@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Exceptions\Http;
+namespace Helldar\Contracts\Exceptions\Http;
 
 use Helldar\Contracts\Http\Builder;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
 interface ClientException extends HttpExceptionInterface
 {
-    public function __construct(Builder $uri);
+    public function __construct(Builder $uri, string $reason = null);
 }
