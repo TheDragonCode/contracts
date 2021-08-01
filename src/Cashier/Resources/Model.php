@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Helldar\Contracts\Cashier\Resources;
 
+use Helldar\Contracts\Cashier\Config\Driver;
 use Helldar\Contracts\Cashier\Http\Request;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
@@ -12,7 +13,7 @@ use Illuminate\Database\Eloquent\Model as EloquentModel;
  */
 interface Model
 {
-    public function __construct(EloquentModel $model);
+    public function __construct(EloquentModel $model, Driver $config);
 
     public function getClientId(): string;
 
