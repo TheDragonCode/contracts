@@ -11,17 +11,17 @@ interface Statuses
 {
     public function __construct(Model $model);
 
-    public function hasUnknown(string $status = null): bool;
+    public function hasUnknown($status = null): bool;
 
-    public function hasCreated(string $status = null): bool;
+    public function hasCreated($status = null): bool;
 
-    public function hasFailed(string $status = null): bool;
+    public function hasFailed($status = null): bool;
 
-    public function hasRefunded(string $status = null): bool;
+    public function hasRefunded($status = null): bool;
 
-    public function hasRefunding(string $status = null): bool;
+    public function hasRefunding($status = null): bool;
 
-    public function hasSuccess(string $status = null): bool;
+    public function hasSuccess($status = null): bool;
 
-    public function inProgress(string $status = null): bool;
+    public function inProgress($status = null): bool;
 }
