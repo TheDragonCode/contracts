@@ -1,29 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Helldar\Contracts\Cashier;
 
-use Helldar\Contracts\Cashier\DTO\Config;
-use Helldar\Contracts\Cashier\Exceptions\Exception;
-use Helldar\Contracts\Cashier\Helpers\Status;
-use Helldar\Contracts\Cashier\Resources\Response;
+use Helldar\Contracts\Cashier\Helpers\Statuses;
+use Helldar\Contracts\Cashier\Http\Response;
+use Helldar\Contracts\Cashier\Resources\Details;
 use Illuminate\Database\Eloquent\Model;
 
-/**
- * @method static Driver make(Config $config)
- */
+/** @method static Driver make(Config\Driver $config, Model $payment) */
 interface Driver
 {
-    public function __construct(Config $config);
+    public function __construct(Config\Driver $config, Model $payment);
 
-    public function response(array $data, bool $mapping = true): Response;
+    public function statuses(): Statuses;
 
-    public function model(Model $model): self;
-
-    public function statuses(): Status;
-
-    public function exception(): Exception;
-
-    public function host(): string;
+    public function details(array $details): Details;
 
     public function start(): Response;
 
