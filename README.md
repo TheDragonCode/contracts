@@ -1,6 +1,6 @@
 # Contracts
 
-A set of contracts for Andrey Helldar's projects.
+A set of contracts for any project.
 
 [![Stable Version][badge_stable]][link_packagist]
 [![StyleCI Status][badge_styleci]][link_styleci]
