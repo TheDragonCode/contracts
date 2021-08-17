@@ -1,6 +1,6 @@
 {
     "name": "andrey-helldar/contracts",
-    "description": "The Andrey Helldar Contracts package",
+    "description": "A set of contracts for any project",
     "type": "library",
     "license": "MIT",
     "keywords": [
