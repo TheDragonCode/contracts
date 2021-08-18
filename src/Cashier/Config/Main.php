@@ -10,7 +10,7 @@ interface Main
 
     public function getLogger(): ?string;
 
-    public function getQueue(): ?string;
+    public function getQueue(): Queue;
 
     public function getCheckDelay(): int;
 
