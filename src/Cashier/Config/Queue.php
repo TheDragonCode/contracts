@@ -9,4 +9,6 @@ interface Queue
     public function getConnection(): ?string;
 
     public function getName(): ?string;
+
+    public function afterCommit(): bool;
 }
