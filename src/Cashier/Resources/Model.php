@@ -30,6 +30,4 @@ interface Model
     public function getCreatedAt(): string;
 
     public function getExternalId(): ?string;
-
-    public function refresh(): void;
 }
