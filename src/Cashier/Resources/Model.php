@@ -9,7 +9,7 @@ use Helldar\Contracts\Cashier\Http\Request;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
 /**
- * @method static Request make(EloquentModel $model)
+ * @method static Request make(EloquentModel $model, Driver $config)
  */
 interface Model
 {
