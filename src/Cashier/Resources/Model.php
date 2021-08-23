@@ -30,4 +30,6 @@ interface Model
     public function getCreatedAt(): string;
 
     public function getExternalId(): ?string;
+
+    public function getConfig(): Driver;
 }

@@ -23,4 +23,6 @@ interface Request
     public function body(): array;
 
     public function getRawBody(): array;
+
+    public function getHttpOptions(): array;
 }

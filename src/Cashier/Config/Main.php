@@ -8,8 +8,6 @@ interface Main
 {
     public function isProduction(): bool;
 
-    public function getHttp(): Http;
-
     public function getLogger(): ?string;
 
     public function getQueue(): Queue;

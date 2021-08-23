@@ -18,4 +18,9 @@ interface Driver extends DataTransferObject
     public function getClientId(): ?string;
 
     public function getClientSecret(): ?string;
+
+    /** @return string|bool */
+    public function getVerifySsl();
+
+    public function getCertificate();
 }
