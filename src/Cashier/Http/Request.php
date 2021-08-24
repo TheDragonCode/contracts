@@ -25,4 +25,6 @@ interface Request
     public function getRawBody(): array;
 
     public function getHttpOptions(): array;
+
+    public function refreshAuth(): void;
 }

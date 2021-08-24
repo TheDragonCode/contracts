@@ -15,4 +15,6 @@ interface Auth
     public function headers(): array;
 
     public function body(): array;
+
+    public function refresh(): void;
 }
