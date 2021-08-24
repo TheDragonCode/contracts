@@ -13,4 +13,6 @@ interface Response extends DataTransferObject, Arrayable
     public function getExternalId(): ?string;
 
     public function getStatus(): ?string;
+
+    public function isEmpty(): bool;
 }
