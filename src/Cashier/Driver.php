@@ -9,10 +9,10 @@ use Helldar\Contracts\Cashier\Http\Response;
 use Helldar\Contracts\Cashier\Resources\Details;
 use Illuminate\Database\Eloquent\Model;
 
-/** @method static Driver make(Config\Driver $config, Model $payment) */
+/** @method static Driver make(string $driver_name, Model $payment) */
 interface Driver
 {
-    public function __construct(Config\Driver $config, Model $payment);
+    public function __construct(string $driver_name, Model $payment);
 
     public function statuses(): Statuses;
 

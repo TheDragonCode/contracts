@@ -6,7 +6,7 @@ namespace Helldar\Contracts\Cashier\Config;
 
 use Helldar\Contracts\DataTransferObject\DataTransferObject;
 
-/** @method static Driver make() */
+/** @method static Driver make(array $items = []) */
 interface Driver extends DataTransferObject
 {
     /** @return \Helldar\Contracts\Cashier\Driver|string */
@@ -18,13 +18,4 @@ interface Driver extends DataTransferObject
     public function getClientId(): ?string;
 
     public function getClientSecret(): ?string;
-
-    /** @return bool|string */
-    public function getVerifySsl();
-
-    public function hasCertificate(): bool;
-
-    public function getCertificatePath(): ?string;
-
-    public function getCertificatePassword(): ?string;
 }
