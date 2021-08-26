@@ -11,4 +11,6 @@ interface Queue
     public function getName(): ?string;
 
     public function afterCommit(): bool;
+
+    public function getTries(): int;
 }
