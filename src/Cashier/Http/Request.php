@@ -14,6 +14,8 @@ interface Request
 {
     public function __construct(Model $model);
 
+    public function model(): Model;
+
     public function uri(): Builder;
 
     public function headers(): array;
