@@ -32,4 +32,6 @@ interface Model
     public function getExternalId(): ?string;
 
     public function getConfig(): Driver;
+
+    public function getExtra(): ?array;
 }
