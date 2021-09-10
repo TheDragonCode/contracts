@@ -15,6 +15,11 @@ interface Model
 {
     public function __construct(EloquentModel $model, Driver $config);
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Model|\Helldar\Cashier\Concerns\Casheable
+     */
+    public function getPaymentModel(): EloquentModel;
+
     public function getClientId(): string;
 
     public function getClientSecret(): string;
