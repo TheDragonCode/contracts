@@ -19,19 +19,16 @@ declare(strict_types=1);
 
 namespace Helldar\Contracts\LangPublisher;
 
-interface Provider
+/**
+ * @method static Translation make()
+ */
+interface Translation
 {
-    /**
-     * Indicates the base path of the provider.
-     *
-     * For example, `__DIR__`
-     *
-     * @return string
-     */
-    public function basePath(): string;
+    public function keys(string $target, array $keys): self;
 
-    /**
-     * @return \Helldar\Contracts\LangPublisher\Plugin[]
-     */
-    public function plugins(): array;
+    public function translation(string $locale, string $target, array $translations): self;
+
+    public function getKeys(): array;
+
+    public function getTranslations(): array;
 }

@@ -1,5 +1,20 @@
 <?php
 
+/*
+ * This file is part of the "andrey-helldar/laravel-lang-publisher" project.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author Andrey Helldar <helldar@ai-rus.com>
+ *
+ * @copyright 2021 Andrey Helldar
+ *
+ * @license MIT
+ *
+ * @see https://github.com/andrey-helldar/laravel-lang-publisher
+ */
+
 declare(strict_types=1);
 
 namespace Helldar\Contracts\LangPublisher;
@@ -14,25 +29,19 @@ interface Plugin
      *
      * @return string
      */
-    public function vendor(): ?string;
+    public function vendor(): string;
 
     /**
      * Specifies the relative path to the source files.
      *
      * @return array
      */
-    public function source(): array;
+    public function files(): array;
 
     /**
-     * Specifies the relative path to the target file.
+     * Determines the existence of a vendor in the application.
      *
-     * Use `{locale}` to define localization.
-     *
-     * For example,
-     *     `vendor/nova/{locale}.json`
-     *     `spark/{locale}.json`
-     *
-     * @return string
+     * @return bool
      */
-    public function target(): string;
+    public function has(): bool;
 }

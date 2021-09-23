@@ -17,21 +17,11 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\LangPublisher;
+namespace Helldar\Contracts\Support;
 
-interface Provider
+interface Filesystem
 {
-    /**
-     * Indicates the base path of the provider.
-     *
-     * For example, `__DIR__`
-     *
-     * @return string
-     */
-    public function basePath(): string;
+    public function load(string $path);
 
-    /**
-     * @return \Helldar\Contracts\LangPublisher\Plugin[]
-     */
-    public function plugins(): array;
+    public function store(string $path, $content): string;
 }
