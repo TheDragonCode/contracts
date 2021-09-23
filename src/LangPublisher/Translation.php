@@ -17,20 +17,18 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config;
+namespace Helldar\Contracts\LangPublisher;
 
-use Helldar\Contracts\Cashier\Config\Queues\Names;
-use Helldar\Contracts\Cashier\Config\Queues\Unique;
-
-interface Queue
+/**
+ * @method static Translation make()
+ */
+interface Translation
 {
-    public function getConnection(): ?string;
+    public function keys(string $target, array $keys): self;
 
-    public function getNames(): Names;
+    public function translation(string $locale, string $target, array $translations): self;
 
-    public function afterCommit(): bool;
+    public function getKeys(): array;
 
-    public function getTries(): int;
-
-    public function getUnique(): Unique;
+    public function getTranslations(): array;
 }

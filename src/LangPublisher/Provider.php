@@ -17,20 +17,21 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config;
+namespace Helldar\Contracts\LangPublisher;
 
-use Helldar\Contracts\Cashier\Config\Queues\Names;
-use Helldar\Contracts\Cashier\Config\Queues\Unique;
-
-interface Queue
+interface Provider
 {
-    public function getConnection(): ?string;
+    /**
+     * Indicates the base path of the provider.
+     *
+     * For example, `__DIR__`
+     *
+     * @return string
+     */
+    public function basePath(): string;
 
-    public function getNames(): Names;
-
-    public function afterCommit(): bool;
-
-    public function getTries(): int;
-
-    public function getUnique(): Unique;
+    /**
+     * @return \Helldar\Contracts\LangPublisher\Plugin[]
+     */
+    public function plugins(): array;
 }

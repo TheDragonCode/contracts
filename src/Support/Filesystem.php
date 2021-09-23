@@ -17,20 +17,11 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config;
+namespace Helldar\Contracts\Support;
 
-use Helldar\Contracts\Cashier\Config\Queues\Names;
-use Helldar\Contracts\Cashier\Config\Queues\Unique;
-
-interface Queue
+interface Filesystem
 {
-    public function getConnection(): ?string;
+    public function load(string $path);
 
-    public function getNames(): Names;
-
-    public function afterCommit(): bool;
-
-    public function getTries(): int;
-
-    public function getUnique(): Unique;
+    public function store(string $path, $content): string;
 }
