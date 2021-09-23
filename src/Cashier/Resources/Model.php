@@ -31,7 +31,7 @@ interface Model
     public function __construct(EloquentModel $model, Driver $config);
 
     /**
-     * @return \Illuminate\Database\Eloquent\Model|\Helldar\Cashier\Concerns\Casheable
+     * @return \Helldar\Cashier\Concerns\Casheable|\Illuminate\Database\Eloquent\Model
      */
     public function getPaymentModel(): EloquentModel;
 
