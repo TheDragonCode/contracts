@@ -15,6 +15,8 @@
  * @see https://github.com/andrey-helldar/contracts
  */
 
+declare(strict_types=1);
+
 namespace Helldar\Contracts\DataTransferObject;
 
 interface DataTransferObject
