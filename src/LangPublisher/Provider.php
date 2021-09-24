@@ -22,13 +22,9 @@ namespace Helldar\Contracts\LangPublisher;
 interface Provider
 {
     /**
-     * Indicates the base path of the provider.
-     *
-     * For example, `__DIR__`
-     *
      * @return string
      */
-    public function basePath(): string;
+    public function name(): string;
 
     /**
      * @return \Helldar\Contracts\LangPublisher\Plugin[]
