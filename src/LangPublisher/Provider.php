@@ -24,7 +24,7 @@ interface Provider
     /**
      * @return string
      */
-    public function name(): string;
+    public function basePath(): string;
 
     /**
      * @return \Helldar\Contracts\LangPublisher\Plugin[]
