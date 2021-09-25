@@ -25,11 +25,11 @@ interface Plugin
      * Specifies the namespace of the package, upon detection
      * of which the localization will be installed.
      *
-     * Leave blank if you always need to install the localization.
+     * Return `null` if you always need to install the localization.
      *
-     * @return string
+     * @return string|null
      */
-    public function vendor(): string;
+    public function vendor(): ?string;
 
     /**
      * Specifies the relative path to the source files.
