@@ -51,6 +51,8 @@ interface Model
 
     public function getExternalId(): ?string;
 
+    public function getOperationId(): ?string;
+
     public function getConfig(): Driver;
 
     public function getExtra(): ?array;
