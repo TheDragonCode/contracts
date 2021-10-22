@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\LangPublisher;
+namespace DragonCode\Contracts\LangPublisher;
 
 interface Plugin
 {

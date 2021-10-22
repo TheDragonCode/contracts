@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Exceptions;
+namespace DragonCode\Contracts\Exceptions;
 
 use Throwable;
 

@@ -17,10 +17,10 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config;
+namespace DragonCode\Contracts\Cashier\Config;
 
-use Helldar\Contracts\Cashier\Config\Queues\Names;
-use Helldar\Contracts\Cashier\Config\Queues\Unique;
+use DragonCode\Contracts\Cashier\Config\Queues\Names;
+use DragonCode\Contracts\Cashier\Config\Queues\Unique;
 
 interface Queue
 {

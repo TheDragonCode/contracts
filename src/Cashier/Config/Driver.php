@@ -17,17 +17,17 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config;
+namespace DragonCode\Contracts\Cashier\Config;
 
-use Helldar\Contracts\DataTransferObject\DataTransferObject;
+use DragonCode\Contracts\DataTransferObject\DataTransferObject;
 
 /** @method static Driver make(array $items = []) */
 interface Driver extends DataTransferObject
 {
-    /** @return \Helldar\Contracts\Cashier\Driver|string */
+    /** @return \DragonCode\Contracts\Cashier\Driver|string */
     public function getDriver(): string;
 
-    /** @return \Helldar\Contracts\Cashier\Resources\Model|string */
+    /** @return \DragonCode\Contracts\Cashier\Resources\Model|string */
     public function getDetails(): string;
 
     public function getClientId(): ?string;

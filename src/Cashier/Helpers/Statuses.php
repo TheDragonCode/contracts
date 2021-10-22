@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Helpers;
+namespace DragonCode\Contracts\Cashier\Helpers;
 
 use Illuminate\Database\Eloquent\Model;
 

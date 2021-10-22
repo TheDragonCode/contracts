@@ -17,10 +17,10 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Auth;
+namespace DragonCode\Contracts\Cashier\Auth;
 
-use Helldar\Contracts\Cashier\Http\Request;
-use Helldar\Contracts\Cashier\Resources\Model;
+use DragonCode\Contracts\Cashier\Http\Request;
+use DragonCode\Contracts\Cashier\Resources\Model;
 
 /** @method static Auth make(Model $model, Request $request, bool $hash = true, array $extra = []) */
 interface Auth

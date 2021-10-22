@@ -17,10 +17,10 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Resources;
+namespace DragonCode\Contracts\Cashier\Resources;
 
-use Helldar\Contracts\Cashier\Config\Driver;
-use Helldar\Contracts\Cashier\Http\Request;
+use DragonCode\Contracts\Cashier\Config\Driver;
+use DragonCode\Contracts\Cashier\Http\Request;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
 /**

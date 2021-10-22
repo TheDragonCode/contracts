@@ -17,9 +17,9 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Http;
+namespace DragonCode\Contracts\Http;
 
-use Helldar\Contracts\Support\Arrayable;
+use DragonCode\Contracts\Support\Arrayable;
 use Psr\Http\Message\UriInterface;
 
 interface Builder extends UriInterface, Arrayable
@@ -83,7 +83,7 @@ interface Builder extends UriInterface, Arrayable
     /**
      * Remove the fragment component from the URI.
      *
-     * @return \Helldar\Contracts\Http\Builder
+     * @return \DragonCode\Contracts\Http\Builder
      */
     public function removeFragment(): self;
 
@@ -93,7 +93,7 @@ interface Builder extends UriInterface, Arrayable
      * @param  string  $key
      * @param  mixed  $value
      *
-     * @return \Helldar\Contracts\Http\Builder
+     * @return \DragonCode\Contracts\Http\Builder
      */
     public function putQuery(string $key, $value): self;
 
@@ -102,7 +102,7 @@ interface Builder extends UriInterface, Arrayable
      *
      * @param  string  $key
      *
-     * @return \Helldar\Contracts\Http\Builder
+     * @return \DragonCode\Contracts\Http\Builder
      */
     public function removeQuery(string $key): self;
 
@@ -111,7 +111,7 @@ interface Builder extends UriInterface, Arrayable
      *
      * @param  \Psr\Http\Message\UriInterface  $uri
      *
-     * @return \Helldar\Contracts\Http\Builder
+     * @return \DragonCode\Contracts\Http\Builder
      */
     public function fromPsr(UriInterface $uri): self;
 

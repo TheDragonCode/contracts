@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\LangPublisher;
+namespace DragonCode\Contracts\LangPublisher;
 
 interface Provider
 {
@@ -27,7 +27,7 @@ interface Provider
     public function basePath(): string;
 
     /**
-     * @return \Helldar\Contracts\LangPublisher\Plugin[]
+     * @return \DragonCode\Contracts\LangPublisher\Plugin[]
      */
     public function plugins(): array;
 }
