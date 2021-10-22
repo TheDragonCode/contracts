@@ -1,5 +1,5 @@
 {
-    "name": "andrey-helldar/contracts",
+    "name": "dragon-code/contracts",
     "description": "A set of contracts for any project",
     "type": "library",
     "license": "MIT",
@@ -14,7 +14,7 @@
         }
     ],
     "support": {
-        "source": "https://github.com/andrey-helldar/contracts"
+        "source": "https://github.com/TheDragonCode/contracts"
     },
     "require": {
         "php": "^7.2.5|^8.0",
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Helldar\\Contracts\\": "src"
+            "DragonCode\\Contracts\\": "src"
         }
     },
     "config": {

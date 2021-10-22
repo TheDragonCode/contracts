@@ -17,9 +17,9 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Exceptions;
+namespace DragonCode\Contracts\Exceptions;
 
-use Helldar\Contracts\Http\Builder;
+use DragonCode\Contracts\Http\Builder;
 
 interface Manager
 {

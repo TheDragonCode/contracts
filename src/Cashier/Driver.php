@@ -17,11 +17,11 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier;
+namespace DragonCode\Contracts\Cashier;
 
-use Helldar\Contracts\Cashier\Helpers\Statuses;
-use Helldar\Contracts\Cashier\Http\Response;
-use Helldar\Contracts\Cashier\Resources\Details;
+use DragonCode\Contracts\Cashier\Helpers\Statuses;
+use DragonCode\Contracts\Cashier\Http\Response;
+use DragonCode\Contracts\Cashier\Resources\Details;
 use Illuminate\Database\Eloquent\Model;
 
 /** @method static Driver make(Config\Driver $config, Model $payment) */

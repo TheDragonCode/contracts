@@ -17,9 +17,9 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Exceptions\Http;
+namespace DragonCode\Contracts\Exceptions\Http;
 
-use Helldar\Contracts\Http\Builder;
+use DragonCode\Contracts\Http\Builder;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
 interface ClientException extends HttpExceptionInterface

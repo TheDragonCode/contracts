@@ -17,10 +17,10 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Http;
+namespace DragonCode\Contracts\Cashier\Http;
 
-use Helldar\Contracts\Cashier\Resources\Model;
-use Helldar\Contracts\Http\Builder;
+use DragonCode\Contracts\Cashier\Resources\Model;
+use DragonCode\Contracts\Http\Builder;
 
 /**
  * @method static Request make(Model $model)

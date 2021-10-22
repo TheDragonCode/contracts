@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config;
+namespace DragonCode\Contracts\Cashier\Config;
 
 interface Main
 {

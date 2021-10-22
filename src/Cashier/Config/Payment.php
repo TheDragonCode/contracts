@@ -17,11 +17,11 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config;
+namespace DragonCode\Contracts\Cashier\Config;
 
-use Helldar\Contracts\Cashier\Config\Payments\Attributes;
-use Helldar\Contracts\Cashier\Config\Payments\Map;
-use Helldar\Contracts\Cashier\Config\Payments\Statuses;
+use DragonCode\Contracts\Cashier\Config\Payments\Attributes;
+use DragonCode\Contracts\Cashier\Config\Payments\Map;
+use DragonCode\Contracts\Cashier\Config\Payments\Statuses;
 
 interface Payment
 {

@@ -7,24 +7,22 @@ A set of contracts for any project.
 [![Total Downloads][badge_downloads]][link_packagist]
 [![License][badge_license]][link_license]
 
+## Upgrade from `andrey-helldar/contracts`
+
+1. Replace `"andrey-helldar/contracts": "^1.0"` with `"dragon-code/contracts": "^2.0"` in the `composer.json` file;
+2. Replace `Helldar\Contracts` namespace prefix with `DragonCode\Contracts`;
+3. Call the `composer update` console command.
 
 ## License
 
 This package is licensed under the [MIT License](LICENSE).
 
 
-## For Enterprise
+[badge_downloads]:      https://img.shields.io/packagist/dt/dragon-code/contracts.svg?style=flat-square
 
-Available as part of the Tidelift Subscription.
+[badge_license]:        https://img.shields.io/packagist/l/dragon-code/contracts.svg?style=flat-square
 
-The maintainers of `andrey-helldar/contracts` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source packages you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact packages you use. [Learn more](https://tidelift.com/subscription/pkg/packagist-andrey-helldar-contracts?utm_source=packagist-andrey-helldar-contracts&utm_medium=referral&utm_campaign=enterprise&utm_term=repo).
-
-
-[badge_downloads]:      https://img.shields.io/packagist/dt/andrey-helldar/contracts.svg?style=flat-square
-
-[badge_license]:        https://img.shields.io/packagist/l/andrey-helldar/contracts.svg?style=flat-square
-
-[badge_stable]:         https://img.shields.io/github/v/release/andrey-helldar/contracts?label=stable&style=flat-square
+[badge_stable]:         https://img.shields.io/github/v/release/dragon-code/contracts?label=stable&style=flat-square
 
 [badge_styleci]:        https://styleci.io/repos/119022335/shield
 
@@ -32,4 +30,4 @@ The maintainers of `andrey-helldar/contracts` and thousands of other packages ar
 
 [link_license]:         LICENSE
 
-[link_packagist]:       https://packagist.org/packages/andrey-helldar/contracts
+[link_packagist]:       https://packagist.org/packages/dragon-code/contracts

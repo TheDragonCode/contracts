@@ -17,9 +17,9 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Config\Payments;
+namespace DragonCode\Contracts\Cashier\Config\Payments;
 
-use Helldar\Contracts\DataTransferObject\DataTransferObject;
+use DragonCode\Contracts\DataTransferObject\DataTransferObject;
 
 interface Map extends DataTransferObject
 {

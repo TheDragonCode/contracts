@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\DataTransferObject;
+namespace DragonCode\Contracts\DataTransferObject;
 
 interface DataTransferObject
 {

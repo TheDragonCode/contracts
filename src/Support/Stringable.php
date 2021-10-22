@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Support;
+namespace DragonCode\Contracts\Support;
 
 interface Stringable extends \Stringable
 {

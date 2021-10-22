@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Helldar\Contracts\Cashier\Resources;
+namespace DragonCode\Contracts\Cashier\Resources;
 
 use Illuminate\Support\Carbon;
 
