@@ -1,5 +1,7 @@
 # Contracts
 
+<img src="https://preview.dragon-code.pro/TheDragonCode/contracts.svg?brand=php" width="100%" height="320" alt="The Dragon Code's Contracts"/>
+
 A set of contracts for any project.
 
 [![Stable Version][badge_stable]][link_packagist]
