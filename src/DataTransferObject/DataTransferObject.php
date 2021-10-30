@@ -19,7 +19,9 @@ declare(strict_types=1);
 
 namespace DragonCode\Contracts\DataTransferObject;
 
-interface DataTransferObject
+use DragonCode\Contracts\Support\Arrayable;
+
+interface DataTransferObject extends Arrayable
 {
     public function __construct(array $items = []);
 }
