@@ -20,11 +20,10 @@ declare(strict_types=1);
 namespace DragonCode\Contracts\Cashier\Resources;
 
 use DragonCode\Contracts\DataTransferObject\DataTransferObject;
-use DragonCode\Contracts\Support\Arrayable;
 use DragonCode\Contracts\Support\Jsonable;
 
 /** @method static make(array $details = []) */
-interface Details extends DataTransferObject, Jsonable, Arrayable
+interface Details extends DataTransferObject, Jsonable
 {
     public function getStatus(): ?string;
 }
