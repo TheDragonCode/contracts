@@ -20,10 +20,9 @@ declare(strict_types=1);
 namespace DragonCode\Contracts\Cashier\Http;
 
 use DragonCode\Contracts\DataTransferObject\DataTransferObject;
-use DragonCode\Contracts\Support\Arrayable;
 
 /** @method static Response make(array $items = []) */
-interface Response extends DataTransferObject, Arrayable
+interface Response extends DataTransferObject
 {
     public function getExternalId(): ?string;
 
