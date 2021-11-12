@@ -48,4 +48,11 @@ interface Store
      * @param  string  $key
      */
     public function forget(string $key): void;
+    
+    /**
+     * Checks for the existence of a key.
+     *
+     * @param  string  $key
+     */
+    public function has(string $key): bool;
 }
