@@ -36,17 +36,13 @@ interface Store
      * @param  string  $key
      * @param  mixed  $value
      * @param  int  $seconds
-     *
-     * @return mixed
      */
-    public function put(string $key, $value, int $seconds);
+    public function put(string $key, $value, int $seconds): void;
 
     /**
      * Remove an item from the cache.
      *
      * @param  string  $key
-     *
-     * @return mixed
      */
-    public function forget(string $key);
+    public function forget(string $key): void;
 }
