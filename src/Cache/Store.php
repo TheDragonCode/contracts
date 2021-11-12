@@ -25,10 +25,11 @@ interface Store
      * Retrieve an item from the cache by key.
      *
      * @param  string  $key
+     * @param  mixed  $default
      *
      * @return mixed
      */
-    public function get(string $key);
+    public function get(string $key, $default = null);
 
     /**
      * Store an item in the cache for a given number of seconds.
