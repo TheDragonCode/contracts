@@ -26,6 +26,9 @@
         "illuminate/database": "^8.0",
         "phpdocumentor/reflection-docblock": "^5.0"
     },
+    "conflict": {
+        "andrey-helldar/contracts": "*"
+    },
     "autoload": {
         "psr-4": {
             "DragonCode\\Contracts\\": "src"
