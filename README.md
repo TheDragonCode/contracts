@@ -24,7 +24,7 @@ This package is licensed under the [MIT License](LICENSE).
 
 [badge_license]:        https://img.shields.io/packagist/l/dragon-code/contracts.svg?style=flat-square
 
-[badge_stable]:         https://img.shields.io/github/v/release/dragon-code/contracts?label=stable&style=flat-square
+[badge_stable]:         https://img.shields.io/github/v/release/TheDragonCode/contracts?label=stable&style=flat-square
 
 [badge_styleci]:        https://styleci.io/repos/119022335/shield
 
