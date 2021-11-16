@@ -40,7 +40,7 @@ interface Store
      *
      * @return mixed
      */
-    public function put(string $key, mixed $value, int $seconds);
+    public function put(string $key, $value, int $seconds);
 
     /**
      * Remove an item from the cache.
