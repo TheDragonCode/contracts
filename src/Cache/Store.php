@@ -25,22 +25,22 @@ interface Store
      * Retrieve an item from the cache by key.
      *
      * @param  string  $key
-     * @param  callable  $default
+     * @param  mixed  $default
      *
      * @return mixed
      */
-    public function get(string $key, callable $default = null);
+    public function get(string $key, $default = null);
 
     /**
      * Store an item in the cache for a given number of seconds.
      *
      * @param  string  $key
-     * @param  callable  $callback
+     * @param  mixed  $callback
      * @param  int  $seconds
      *
      * @return mixed
      */
-    public function put(string $key, callable $callback, int $seconds);
+    public function put(string $key, mixed $value, int $seconds);
 
     /**
      * Remove an item from the cache.
