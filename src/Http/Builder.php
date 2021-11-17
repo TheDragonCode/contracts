@@ -86,6 +86,13 @@ interface Builder extends UriInterface, Arrayable
      * @return \DragonCode\Contracts\Http\Builder
      */
     public function removeFragment(): self;
+    
+    /**
+     * Retrieve the query array of the URI.
+     *
+     * @return array
+     */
+    public function getQueryArray(): array;
 
     /**
      * Return an instance with the specified query object.
