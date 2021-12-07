@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace DragonCode\LaravelActions\Contracts;
+namespace DragonCode\Contracts\LaravelActions;
 
 interface Actionable
 {
