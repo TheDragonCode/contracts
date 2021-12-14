@@ -19,6 +19,7 @@ declare(strict_types=1);
 
 namespace DragonCode\Contracts\Cashier\Config;
 
+use DragonCode\Contracts\Cashier\Config\Queues\Names;
 use DragonCode\Contracts\DataTransferObject\DataTransferObject;
 
 /** @method static Driver make(array $items = []) */
@@ -33,4 +34,6 @@ interface Driver extends DataTransferObject
     public function getClientId(): ?string;
 
     public function getClientSecret(): ?string;
+
+    public function getQueue(): Names;
 }
