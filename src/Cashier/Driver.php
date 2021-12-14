@@ -19,6 +19,7 @@ declare(strict_types=1);
 
 namespace DragonCode\Contracts\Cashier;
 
+use DragonCode\Contracts\Cashier\Config\Queues\Names;
 use DragonCode\Contracts\Cashier\Helpers\Statuses;
 use DragonCode\Contracts\Cashier\Http\Response;
 use DragonCode\Contracts\Cashier\Resources\Details;
@@ -38,4 +39,6 @@ interface Driver
     public function check(): Response;
 
     public function refund(): Response;
+
+    public function queue(): Names;
 }
