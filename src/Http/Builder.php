@@ -53,6 +53,20 @@ interface Builder extends UriInterface, Arrayable
     public function getDomain(): string;
 
     /**
+     * Retrieve the domain level name of the URI.
+     *
+     * @return string
+     */
+    public function getDomainLevel(int $level = 0): string;
+
+    /**
+     * Retrieve the base domain name of the URI.
+     *
+     * @return string
+     */
+    public function getBaseDomain(): string;
+
+    /**
      * Retrieve the subdomain name of the URI.
      *
      * @return string
@@ -86,7 +100,7 @@ interface Builder extends UriInterface, Arrayable
      * @return \DragonCode\Contracts\Http\Builder
      */
     public function removeFragment(): self;
-    
+
     /**
      * Retrieve the query array of the URI.
      *
