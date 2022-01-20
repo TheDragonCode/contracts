@@ -43,6 +43,19 @@ interface Store
     public function put(string $key, $value, int $seconds);
 
     /**
+     * Store an item in the cache for a given number of seconds.
+     *
+     * The `put` method alias to improve usability.
+     *
+     * @param  string  $key
+     * @param  mixed  $callback
+     * @param  int  $seconds
+     *
+     * @return mixed
+     */
+    public function remember(string $key, $value, int $seconds);
+
+    /**
      * Remove an item from the cache.
      *
      * @param  string  $key
