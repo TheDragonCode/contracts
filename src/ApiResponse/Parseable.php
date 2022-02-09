@@ -10,7 +10,7 @@ interface Parseable extends Makeable
 
     public function setWith(array $with = []): self;
 
-    public function setStatusCode(int $code = null): self;
+    public function setStatusCode(?int $code = null): self;
 
     public function getStatusCode(): int;
 

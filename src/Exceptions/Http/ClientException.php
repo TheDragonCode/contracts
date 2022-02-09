@@ -24,5 +24,5 @@ use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 
 interface ClientException extends HttpExceptionInterface
 {
-    public function __construct(Builder $uri, string $reason = null);
+    public function __construct(Builder $uri, ?string $reason = null);
 }

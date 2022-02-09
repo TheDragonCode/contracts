@@ -18,7 +18,7 @@ interface Responsable
 
     public function headers(array $headers = []): self;
 
-    public function statusCode(int $code = null): self;
+    public function statusCode(?int $code = null): self;
 
     public function data($data = null): self;
 

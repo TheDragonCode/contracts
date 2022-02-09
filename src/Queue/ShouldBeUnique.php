@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace DragonCode\Contracts\Queue;
 
+use DateTimeInterface;
+
 interface ShouldBeUnique
 {
     /**
@@ -16,7 +18,7 @@ interface ShouldBeUnique
     /**
      * The number of seconds after which the object's unique lock will be released.
      *
-     * @return \DateTimeInterface|int
+     * @return DateTimeInterface|int
      */
     public function uniqueFor();
 }

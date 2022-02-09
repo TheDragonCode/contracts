@@ -24,8 +24,8 @@ interface Store
     /**
      * Retrieve an item from the cache by key.
      *
-     * @param  string  $key
-     * @param  mixed  $default
+     * @param string $key
+     * @param mixed $default
      *
      * @return mixed
      */
@@ -34,9 +34,10 @@ interface Store
     /**
      * Store an item in the cache for a given number of seconds.
      *
-     * @param  string  $key
-     * @param  mixed  $callback
-     * @param  int  $seconds
+     * @param string $key
+     * @param mixed $callback
+     * @param int $seconds
+     * @param mixed $value
      *
      * @return mixed
      */
@@ -47,9 +48,10 @@ interface Store
      *
      * The `put` method alias to improve usability.
      *
-     * @param  string  $key
-     * @param  mixed  $callback
-     * @param  int  $seconds
+     * @param string $key
+     * @param mixed $callback
+     * @param int $seconds
+     * @param mixed $value
      *
      * @return mixed
      */
@@ -58,21 +60,21 @@ interface Store
     /**
      * Remove an item from the cache.
      *
-     * @param  string  $key
+     * @param string $key
      */
     public function forget(string $key): void;
 
     /**
      * Checks for the existence of a key.
      *
-     * @param  string  $key
+     * @param string $key
      */
     public function has(string $key): bool;
 
     /**
      * Checks the key for its absence.
      *
-     * @param  string  $key
+     * @param string $key
      */
     public function doesntHave(string $key): bool;
 }

@@ -25,10 +25,14 @@ use DragonCode\Contracts\DataTransferObject\DataTransferObject;
 /** @method static Driver make(array $items = []) */
 interface Driver extends DataTransferObject
 {
-    /** @return \DragonCode\Contracts\Cashier\Driver|string */
+    /**
+     * @return \DragonCode\Contracts\Cashier\Driver|string
+     */
     public function getDriver(): string;
 
-    /** @return \DragonCode\Contracts\Cashier\Resources\Model|string */
+    /**
+     * @return \DragonCode\Contracts\Cashier\Resources\Model|string
+     */
     public function getDetails(): string;
 
     public function getClientId(): ?string;

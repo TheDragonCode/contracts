@@ -29,8 +29,8 @@ interface Builder extends UriInterface, Arrayable
     /**
      * Parse a URL.
      *
-     * @param  \Psr\Http\Message\UriInterface|string  $url
-     * @param  int  $component
+     * @param \Psr\Http\Message\UriInterface|string $url
+     * @param int $component
      *
      * @return $this
      */
@@ -39,7 +39,7 @@ interface Builder extends UriInterface, Arrayable
     /**
      * Populate an object with parsed data.
      *
-     * @param  array  $parsed
+     * @param array $parsed
      *
      * @return $this
      */
@@ -54,6 +54,8 @@ interface Builder extends UriInterface, Arrayable
 
     /**
      * Retrieve the domain level name of the URI.
+     *
+     * @param int $level
      *
      * @return string
      */
@@ -111,8 +113,8 @@ interface Builder extends UriInterface, Arrayable
     /**
      * Return an instance with the specified query object.
      *
-     * @param  string  $key
-     * @param  mixed  $value
+     * @param string $key
+     * @param mixed $value
      *
      * @return \DragonCode\Contracts\Http\Builder
      */
@@ -121,7 +123,7 @@ interface Builder extends UriInterface, Arrayable
     /**
      * Return an instance with the specified query object.
      *
-     * @param  string  $key
+     * @param string $key
      *
      * @return \DragonCode\Contracts\Http\Builder
      */
@@ -130,7 +132,7 @@ interface Builder extends UriInterface, Arrayable
     /**
      * Return an instance with the specified `UriInterface`.
      *
-     * @param  \Psr\Http\Message\UriInterface  $uri
+     * @param \Psr\Http\Message\UriInterface $uri
      *
      * @return \DragonCode\Contracts\Http\Builder
      */

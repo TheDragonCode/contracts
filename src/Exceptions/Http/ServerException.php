@@ -24,5 +24,5 @@ use Throwable;
 
 interface ServerException extends Throwable
 {
-    public function __construct(Builder $uri, string $reason = null);
+    public function __construct(Builder $uri, ?string $reason = null);
 }

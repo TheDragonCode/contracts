@@ -19,10 +19,12 @@ declare(strict_types=1);
 
 namespace DragonCode\Contracts\Cache;
 
+use DateTimeInterface;
+
 interface Ttl
 {
     /**
-     * @return \DateTimeInterface|string|integer
+     * @return DateTimeInterface|string|int
      */
     public function cacheTtl();
 }
