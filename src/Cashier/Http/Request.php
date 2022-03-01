@@ -31,6 +31,8 @@ interface Request
 
     public function model(): Model;
 
+    public function method(): string;
+
     public function uri(): Builder;
 
     public function headers(): array;
