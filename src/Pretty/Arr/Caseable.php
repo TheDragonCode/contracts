@@ -14,5 +14,5 @@ interface Caseable
 
     public const SNAKE_CASE = 2;
 
-    public function setCase(int $type = self::NO_CASE): void;
+    public function setCase(int $type = self::NO_CASE): static;
 }
