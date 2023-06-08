@@ -23,6 +23,8 @@ interface Store
 {
     /**
      * Retrieve an item from the cache by key.
+     *
+     * @param  mixed|null  $default
      */
     public function get(string $key, $default = null);
 
