@@ -21,13 +21,10 @@ namespace DragonCode\Contracts\LangPublisher;
 
 interface Provider
 {
-    /**
-     * @return string
-     */
     public function basePath(): string;
 
     /**
-     * @return \DragonCode\Contracts\LangPublisher\Plugin[]
+     * @return array<\DragonCode\Contracts\LangPublisher\Plugin>
      */
     public function plugins(): array;
 }

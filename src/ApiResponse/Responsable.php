@@ -6,14 +6,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 interface Responsable
 {
-    public static function allowWith(): void;
-
-    public static function withoutWith(): void;
-
-    public static function wrapped(): void;
-
-    public static function withoutWrap(): void;
-
     public function with(array $with = []): self;
 
     public function headers(array $headers = []): self;
@@ -23,4 +15,12 @@ interface Responsable
     public function data($data = null): self;
 
     public function response(): JsonResponse;
+
+    public static function allowWith(): void;
+
+    public static function withoutWith(): void;
+
+    public static function wrapped(): void;
+
+    public static function withoutWrap(): void;
 }

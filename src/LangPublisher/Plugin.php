@@ -26,22 +26,16 @@ interface Plugin
      * of which the localization will be installed.
      *
      * Return `null` if you always need to install the localization.
-     *
-     * @return string|null
      */
     public function vendor(): ?string;
 
     /**
      * Specifies the relative path to the source files.
-     *
-     * @return array
      */
     public function files(): array;
 
     /**
      * Determines the existence of a vendor in the application.
-     *
-     * @return bool
      */
     public function has(): bool;
 }
