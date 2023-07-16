@@ -21,6 +21,4 @@ namespace DragonCode\Contracts\Exceptions;
 
 use Throwable;
 
-interface LogicException extends Throwable
-{
-}
+interface LogicException extends Throwable {}

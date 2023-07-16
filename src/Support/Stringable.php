@@ -19,6 +19,4 @@ declare(strict_types=1);
 
 namespace DragonCode\Contracts\Support;
 
-interface Stringable extends \Stringable
-{
-}
+interface Stringable extends \Stringable {}
