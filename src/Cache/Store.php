@@ -41,6 +41,11 @@ interface Store
     public function remember(string $key, $value, int $seconds);
 
     /**
+     * Store an item forever, regardless of TTL.
+     */
+    public function rememberForever(string $key, $value);
+
+    /**
      * Remove an item from the cache.
      */
     public function forget(string $key): void;
