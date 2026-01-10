@@ -1,6 +1,6 @@
 # Contracts
 
-<img src="https://preview.dragon-code.pro/TheDragonCode/contracts.svg?brand=php&mode=dark" alt="The Dragon Code's Contracts"/>
+![contracts](https://banners.beyondco.de/Contracts.png?theme=light&packageManager=&packageName=&pattern=topography&style=style_2&description=by+The+Dragon+Code&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Fwww.php.net%2Fimages%2Flogos%2Fnew-php-logo.svg)
 
 A set of contracts for any project.
 
