@@ -1,6 +1,9 @@
 # Contracts
 
-![contracts](https://banners.beyondco.de/Contracts.png?theme=light&packageManager=&packageName=&pattern=topography&style=style_2&description=by+The+Dragon+Code&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Fwww.php.net%2Fimages%2Flogos%2Fnew-php-logo.svg)
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Contracts.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=dark&packageManager=composer+require&packageName=dragon-code%2Fcontracts&description=A+set+of+contracts+for+any+project&images=https%3A%2F%2Fsymfony.com%2Flogos%2Fsymfony_black_03.svg">
+    <img src="https://banners.beyondco.de/Contracts.png?pattern=topography&style=style_2&fontSize=100px&md=1&showWatermark=1&theme=light&packageManager=composer+require&packageName=dragon-code%2Fcontracts&description=A+set+of+contracts+for+any+project&images=https%3A%2F%2Fsymfony.com%2Flogos%2Fsymfony_black_03.svg" alt="Contracts">
+</picture>
 
 A set of contracts for any project.
 
